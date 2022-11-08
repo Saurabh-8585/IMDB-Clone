@@ -1,0 +1,14 @@
+
+
+.cards {
+    height: 220px;
+    width: 150px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.cards-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

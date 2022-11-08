@@ -1,0 +1,22 @@
+.cast-container {
+    display: flex;
+    /* background-color: red; */
+    column-gap:4rem;
+    padding-left: 1rem;
+    width: 1000px;
+    overflow-x: scroll;
+    align-items: center;
+    height: 250px;
+    box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    scrollbar-base-color: transparent;
+    
+
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40rem;
+}
