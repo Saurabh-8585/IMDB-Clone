@@ -15,27 +15,26 @@ const Home = () => {
 
   function fetchData() {
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=dfac79bf601a1c8766457c868e28203e&language=en-US`)
+      // fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=dfac79bf601a1c8766457c868e28203e&language=en-US`)
       .then(res => res.json())
       .then(data => setPopular(data.results))
   }
 
   const items = popular.map(movie => (
     <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} >
-      <div className="posterImage">
-        <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} alt="img" />
-      </div>
-      <div className="main-poster-text">
-        <div className="posterImage__overlay">
-          <div className="posterImage__title">{movie ? movie.original_title : ""}</div>
-          <div className="posterImage__runtime">
-            {movie ? movie.release_date : ""}
-            <span className="posterImage__rating">
-              {movie ? movie.vote_average : ""}
-              <i className="fas fa-star" />{" "}
-            </span>
-          </div>
-          <div className="posterImage__description">{movie ? movie.overview : ""}</div>
-        </div>
+      <div className="main-slider-parent">
+        {movie &&
+          <>
+            <div className="slider-image">
+              movie &&
+              <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={movie.title} className='slider-main-img' />
+            </div>
+            <div className="slider-image-details">
+              <h1 className='slider-title'>{movie.original_title}</h1>
+            <h2 className='slider-vote'>{movie.vote_average} <i className="fas fa-star" />{" "}</h2>
+            </div>
+          </>
+        }
       </div>
     </Link>
   ))

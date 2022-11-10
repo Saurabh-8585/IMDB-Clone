@@ -7,9 +7,9 @@ const MovieList = () => {
 
   const { type } = useParams();
 
-  useEffect(() => {
-    getData()
-  }, []);
+  // useEffect(() => {
+  //   getData()
+  // }, []);
 
   useEffect(() => {
     getData()

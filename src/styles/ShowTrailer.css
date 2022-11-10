@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-
+    padding: 0px 10px;
 
 }
 
@@ -14,12 +14,18 @@
 }
 
 
-@media (min-width: 768px) and (max-width:1023px) {}
+@media (min-width: 768px) and (max-width:1023px) {
+.video {
+    width: 700px;
+    height: 350px;
+}
+}
 
 @media (max-width: 768px) {
-    .yt-video {
-        width: 90%;
-        height: 400px;
-
+    .video {
+        width: 340px;
+        height: 210px;
+        border-radius: 10px;
+        object-fit: fill;
     }
 }
