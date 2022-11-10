@@ -8,6 +8,8 @@
     width: 100%;
 }
 
+
+
 .posterImage__overlay {
     position: absolute;
     padding: 5rem;
@@ -54,16 +56,18 @@
     text-align: left;
     width: 50%;
 }
-.cont{
+
+.cont {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin-top: 4rem;
 }
-.box{
+
+.box {
     border-radius: 10px;
-    background-color:black;
+    background-color: black;
     color: white;
     width: 7rem;
 }

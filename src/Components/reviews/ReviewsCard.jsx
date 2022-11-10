@@ -5,7 +5,7 @@ const ReviewsCard = ({ review }) => {
   const [isReadMode, SetisReadMode] = useState(true)
   return (
     <div className='review-card'>
-      <span className='author'>{review.author}</span> <span className='review-date'>{(review.created_at).substring(0,10)}</span>
+      <span className='author'>{review.author}</span> <span className='review-date'>{(review.created_at).substring(0, 10)}</span>
       <p className='author-content'>{isReadMode ? review.content.slice(0, 200) : review.content}
         {
           review.content.length > 150 &&

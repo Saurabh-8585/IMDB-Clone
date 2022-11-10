@@ -14,26 +14,17 @@ const MovieCard = ({ movie }) => {
     }, 2000)
   }, [])
 
-  return <>
-    {
-      isLoading ?
-        <div className="cards">
-          <SkeletonTheme color="#202020" highlightColor='#444'>
-            <Skeleton height={300} duration={2} />
-          </SkeletonTheme>
-        </div>
-        :
-        <Link to={`/movie/ ${movie.id}`} style={{
-          textDecoration: "none",
-          color:"white"
-        }
-        }>
-          <div className="cards">
-            <img src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`} alt="" className="cards-img" />
-            </div>
-        </Link>
+  return (
+    <Link to={`/movie/ ${movie.id}`} style={{
+      textDecoration: "none",
+      color: "white"
     }
-  </>
+    }>
+      <div className="cards">
+        <img src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`} alt="" className="cards-img" />
+      </div>
+    </Link>
+  )
 }
 
 export default MovieCard

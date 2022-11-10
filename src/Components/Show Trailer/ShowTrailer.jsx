@@ -13,20 +13,19 @@ const ShowTrailer = ({ id }) => {
             .then(res => res.json())
             .then(data => setVideo(data.results[0]?.key))
     }
-    const opts = {
-        height: '400',
-        width: '100%',
-    }
 
     return (
 
-        <div>
-            <h1 className='text-center'>Related Video</h1>
+        <>
+            <h1 className='text-center' style={{
+                margin:"3rem 0"
+            }}>Related Video</h1>
             <div className="yt-video">
-                <YouTube videoId={video} opts={opts} />
+                <YouTube videoId={video} iframeClassName='video' />
+
             </div>
 
-        </div >
+        </ >
     )
 }
 

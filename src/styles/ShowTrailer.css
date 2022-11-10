@@ -1,8 +1,25 @@
 .yt-video {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    background-color: red;
-    /* height: 100px; */
-    width: 1000px;
 
+
+}
+
+.video {
+    width: 900px;
+    height: 500px;
+
+}
+
+
+@media (min-width: 768px) and (max-width:1023px) {}
+
+@media (max-width: 768px) {
+    .yt-video {
+        width: 90%;
+        height: 400px;
+
+    }
 }
