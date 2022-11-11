@@ -26,7 +26,7 @@ const MovieCredits = ({ id }) => {
                             alt={cast?.name}
                             className="carouselItem__img"
                         />
-                        <b className="carouselItem__txt text-center">{cast.name}</b>
+                        <h2 className="carouselItem__txt text-center">{cast.name}</h2>
 
                     </>
                     : null
@@ -51,8 +51,8 @@ const MovieCredits = ({ id }) => {
 
     return (
         <>
-            <div className="main">
-                <h1 style={{marginTop: "1rem"}} className='text-center'>Credits</h1>
+            <div className="main-credits">
+                <h1 style={{marginTop: "1rem"}} className='credit-head'>Credits</h1>
                 <AliceCarousel
                     disableButtonsControls
                     disableDotsControls

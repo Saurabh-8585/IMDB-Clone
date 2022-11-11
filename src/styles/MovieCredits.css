@@ -1,6 +1,11 @@
+.main-credits {
+    margin: 7rem auto;
+    width: 90%;
+}
 
-.main{
-    margin-top: 7rem;
+.credit-head {
+    text-align: center;
+    margin: 4rem 0;
 }
 
 .carouselItem {
@@ -9,7 +14,9 @@
     object-fit: contain;
     padding: 10px;
 }
-
+.carouselItem__txt{
+    margin-top: 1rem;
+}
 .carouselItem__img {
     border-radius: 10px;
     margin-bottom: 5px;

@@ -10,8 +10,8 @@
 }
 
 .main-hero {
-    width: 1200px;
-    height: 550px;
+    width: 95%;
+    height: 600px;
     display: flex;
     margin: 2rem auto;
 
@@ -21,7 +21,6 @@
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
 }
 
 .main-parent {
@@ -135,4 +134,16 @@
     }
 }
 
-@media (min-width: 768px) and (max-width:1023px) {}
+@media (min-width: 768px) and (max-width:1023px) {
+
+
+.main-hero {
+        width: 650px;
+        height: 400px;
+    }
+
+    .detail-p p {
+        width: 65%;
+        font-size: 1.5rem;
+    }
+}

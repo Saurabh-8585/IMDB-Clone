@@ -10,6 +10,7 @@ const Home = () => {
   const [popular, setPopular] = useState([]);
 
   useEffect(() => {
+    window.scroll(0,0)
     fetchData()
   }, [])
 
@@ -19,23 +20,25 @@ const Home = () => {
       .then(res => res.json())
       .then(data => setPopular(data.results))
   }
+  console.log(popular);
 
   const items = popular.map(movie => (
     <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} >
       <div className="main-slider-parent">
-        {movie &&
+        {
           <>
             <div className="slider-image">
-              movie &&
               <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} alt={movie.title} className='slider-main-img' />
             </div>
             <div className="slider-image-details">
-              <h1 className='slider-title'>{movie.original_title}</h1>
+            <h1 className='slider-title'>{movie.original_title || movie.name}</h1>
+            <br />
             <h2 className='slider-vote'>{movie.vote_average} <i className="fas fa-star" />{" "}</h2>
+            <p>{movie.overview}</p>
             </div>
           </>
         }
-      </div>
+        </div>
     </Link>
   ))
 
