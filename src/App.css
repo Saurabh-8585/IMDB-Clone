@@ -28,7 +28,3 @@ a {
 
 }
 
-a:active {
-  color: red;
-  border-bottom: 2px solid white;
-}

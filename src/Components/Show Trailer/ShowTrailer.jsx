@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import YouTube from 'react-youtube';
-import '../../styles/ShowTrailer.css'
+import './ShowTrailer.css'
 
 const ShowTrailer = ({ id }) => {
     const [video, setVideo] = useState()

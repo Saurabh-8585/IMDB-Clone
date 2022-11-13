@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import MovieCredits from '../Components/credits/MovieCredits';
 import ShowTrailer from '../Components/Show Trailer/ShowTrailer';
-import '../styles/MovieDetail.css'
+import './MovieDetail.css'
 
 const MovieDetail = () => {
   const [movieDetail, setMovieDetail] = useState([]);
@@ -16,7 +16,6 @@ const MovieDetail = () => {
       .then(data => setMovieDetail(data));
 
   }
-  console.log(movieDetail)
   return (
     <>
       <main className="main">

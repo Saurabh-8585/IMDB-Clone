@@ -1,15 +1,11 @@
 import MovieCard from './MovieCard'
 import { useParams } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
-import '../styles/MovieList.css'
+import './MovieList.css'
 const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
 
   const { type } = useParams();
-
-  // useEffect(() => {
-  //   getData()
-  // }, []);
 
   useEffect(() => {
     getData()
@@ -27,7 +23,7 @@ const MovieList = () => {
       <div className="list-cards">
         {
           movieList.map(movie => (
-            <MovieCard movie={movie} />
+            <MovieCard movie={movie} key={movie.title} />
           ))
         }
       </div>

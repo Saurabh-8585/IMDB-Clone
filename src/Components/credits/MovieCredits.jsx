@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from 'react-alice-carousel';
-import '../../styles/MovieCredits.css'
+import './MovieCredits.css'
 import Reviews from '../reviews/Reviews'
 
 const MovieCredits = ({ id }) => {

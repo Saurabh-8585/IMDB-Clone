@@ -1,0 +1,32 @@
+.nav {
+    background-color: black;
+    width: 200%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.logo-img {
+    height: 30px;
+    width: 70px;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .nav {
+        gap: 1rem;
+    }
+}

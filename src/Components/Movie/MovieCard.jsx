@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/MovieCard.css'
+import './MovieCard.css'
 
 
 const MovieCard = ({ movie }) => {
-
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
-  }, [])
-
   return (
     <Link to={`/movie/ ${movie.id}`} style={{
       textDecoration: "none",

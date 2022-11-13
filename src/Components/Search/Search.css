@@ -1,0 +1,27 @@
+.main-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.input-search{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.input-search:focus{
+outline: none;
+}
+@media (max-width: 768px){
+    .input-search{
+        width: 80%;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .input-search{
+        width: 70%;
+    }
+}
