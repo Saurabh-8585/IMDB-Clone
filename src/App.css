@@ -8,12 +8,13 @@
 
 body {
   background-color: white;
-  color:#181818;
-  overflow-x: hidden;
+  color: #181818;
+  
   
 }
 
 html {
+  overflow-x: hidden;
   font-size: 62.5%;
   font-family: "Poppins", serif;
 }
@@ -27,4 +28,3 @@ a {
   color: white;
 
 }
-

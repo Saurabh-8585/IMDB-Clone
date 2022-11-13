@@ -1,6 +1,6 @@
 .nav {
     background-color: black;
-    width: 200%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -21,6 +21,7 @@
 @media (max-width: 768px) {
 
     .nav {
+        font-size: 1.5rem;
         gap: 1.5rem;
     }
 }

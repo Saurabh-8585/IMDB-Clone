@@ -26,7 +26,7 @@ const MovieCredits = ({ id }) => {
                             alt={cast?.name}
                             className="carouselItem__img"
                         />
-                        <h2 className="carouselItem__txt text-center">{cast.name}</h2>
+                        <h3 className="carouselItem__txt text-center">{cast.name}</h3>
 
                     </>
                     : null
