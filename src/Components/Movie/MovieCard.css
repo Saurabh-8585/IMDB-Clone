@@ -1,11 +1,14 @@
-
-
 .cards {
     height: 220px;
     width: 150px;
     background-color: black;
     border-radius: 10px;
     margin: 1rem;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 .cards-img {
